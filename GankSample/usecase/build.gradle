@@ -2,6 +2,14 @@ apply plugin: 'java-library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(":tools")
+    compile project(path: ':repository')
+
+    ///* ----------------------- >> Reactive << ----------------------- */
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    /* ----------------------- >> Reactive << ----------------------- *///
 }
 
 sourceCompatibility = "1.7"

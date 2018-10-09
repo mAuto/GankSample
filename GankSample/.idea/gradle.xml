@@ -5,11 +5,13 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/gradle-4.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/repository" />
+            <option value="$PROJECT_DIR$/tools" />
             <option value="$PROJECT_DIR$/usecase" />
           </set>
         </option>

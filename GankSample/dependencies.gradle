@@ -1,0 +1,64 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    //Libraries
+    recyclerViewVersion = '21.0.3'
+    rxJavaVersion = '2.0.2'
+    rxAndroidVersion = '2.0.1'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.3'
+    okHttpVersion = '2.5.0'
+    androidAnnotationsVersion = '21.0.3'
+
+    //Testing
+    robolectricVersion = '3.1.1'
+    jUnitVersion = '4.12'
+    mockitoVersion = '1.9.5'
+    espressoVersion = '2.0'
+    testingSupportLibVersion = '0.1'
+
+    appDependencies = [
+            recyclerView:       "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+            rxJava:             "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}"
+    ]
+
+    appTestDependencies = [
+            mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+            espresso:           "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            testingSupportLib:  "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
+    ]
+
+    usecaseDependencies = [
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            rxJava:             "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+    ]
+
+    usecaseTestDependencies = [
+            junit:              "junit:junit:${jUnitVersion}",
+            mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+    ]
+
+    repositoryDependencies = [
+            okHttp:             "com.squareup.okhttp:okhttp:${okHttpVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+            rxJava:             "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}"
+    ]
+
+    repositoryTestDependencies = [
+            junit:              "junit:junit:${jUnitVersion}",
+            mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+            robolectric:        "org.robolectric:robolectric:${robolectricVersion}",
+    ]
+}

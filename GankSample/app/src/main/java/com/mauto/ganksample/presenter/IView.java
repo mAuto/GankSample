@@ -1,5 +1,6 @@
 package com.mauto.ganksample.presenter;
 
+
 import com.mauto.ganksample.repository.model.BaseModel;
 
 /**
