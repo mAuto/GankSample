@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.mauto.ganksample.R;
-import com.mauto.ganksample.repository.model.pojo.GankBean;
-import com.mauto.ganksample.repository.model.pojo.MainModel;
+import com.mauto.repository.model.pojo.GankBean;
+import com.mauto.repository.model.pojo.MainModel;
 
 import java.util.ArrayList;
 import java.util.Collection;

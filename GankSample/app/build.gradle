@@ -40,9 +40,9 @@ dependencies {
     /* ----------------------- >> OkHttp << ----------------------- *///
 
     ///* ----------------------- >> Retrofit << ----------------------- */
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+//    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     // for unite test
-    implementation 'com.squareup.retrofit2:retrofit-mock:2.4.0'
+//    implementation 'com.squareup.retrofit2:retrofit-mock:2.4.0'
     /* ----------------------- >> Retrofit << ----------------------- *///
 
     ///* ----------------------- >> CardView << ----------------------- */

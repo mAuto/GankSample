@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:context=".MainActivity">-->
 
     <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fetch data"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:onClick="onClickFetchData"/>
         <android.support.v4.widget.ContentLoadingProgressBar
             android:id="@+id/pb_loading"
             android:layout_width="48dp"
@@ -21,14 +32,15 @@
             android:id="@+id/rv_resource"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+            android:visibility="gone"
+            android:background="#efefef"></android.support.v7.widget.RecyclerView>
     </FrameLayout>
 
-    <android.support.v7.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:onClick="onClickFetchData"
-        android:text="fetch data"
-        android:textAllCaps="false"/>
+    <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:onClick="onClickFetchData"-->
+        <!--android:text="fetch data"-->
+        <!--android:textAllCaps="false"/>-->
 
-</LinearLayout>
+<!--</LinearLayout>-->
